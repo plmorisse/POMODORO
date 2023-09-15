@@ -6,6 +6,7 @@
 h1{
     text-align: center;
 	color: White;
+	font-family: 'Oswald', sans-serif;
 }
 
 button{
@@ -33,11 +34,11 @@ div{
 }
 
 html{
-	background: #2c3e50;
+	background: #ff0000;
 
 }
 
- #travail{
+#travail{
 	margin-right: 40%;
 }
 
@@ -48,4 +49,18 @@ html{
 	border-radius: 100%;
 	font-family: 'Oswald', sans-serif;
 	font-size: x-large;
+}
+
+#text{
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	color: white;
+	width: 100px;
+	font-family: 'Oswald', sans-serif;
+	font-size: x-large;
+}
+
+.statut{
+	margin: auto;
 }
