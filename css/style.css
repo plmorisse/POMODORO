@@ -29,7 +29,7 @@ div{
 	padding: 0.5%;
 	margin-left: auto;
 	margin-right: auto;
-	width: 25%;
+	width: 300px;
 	margin-bottom: 5%;
 }
 
@@ -39,12 +39,12 @@ html{
 }
 
 #travail{
-	margin-right: 40%;
+	margin-right: 100px;
 }
 
 #timer{
 	margin: auto;
-	width: 2%;
+	width: 25px;
 	border: solid white 5px;
 	border-radius: 100%;
 	font-family: 'Oswald', sans-serif;
