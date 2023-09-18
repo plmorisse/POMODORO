@@ -26,7 +26,6 @@ function timer(x, y){
 
     let departMinutes = x
     textIdentification.textContent = 'Il faut travailler !!'
-    statutTravail.style.backgroundcolor = 'lightblue'
     statutPause.style.backgroundColor = ' rgb(255, 115, 0)'
     textIdentification.style.color ='black'
     let temps = departMinutes * 60
