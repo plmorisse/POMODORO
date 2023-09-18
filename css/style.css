@@ -64,18 +64,22 @@ html{
 
 .statut{
 	border: 1px;
+	
 }
 
 #start{
 	padding: 15px;
 	font-family: 'Oswald', sans-serif;
+	font-size: x-large;
 }
 
 #reset{
 	padding: 15px;
 	font-family: 'Oswald', sans-serif;
+	font-size: x-large;
 }
 
 #travail{
 	background-color: lightblue;
+
 }
