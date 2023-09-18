@@ -45,6 +45,7 @@ html{
 #timer{
 	margin: auto;
 	width: 25px;
+	height: 25px;
 	border: solid white 5px;
 	border-radius: 100%;
 	font-family: 'Oswald', sans-serif;
