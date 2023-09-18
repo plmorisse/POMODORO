@@ -1,4 +1,6 @@
-const travailTemps = 0.15
+
+//changer val avant rendu
+const travailTemps = 0.25
 const pauseTemps = 0.1
 var  variation = new Boolean(true);
 
@@ -9,7 +11,11 @@ let statutTravail = document.getElementById("travail")
 let statutPause = document.getElementById("pause")
 let html = document.getElementById("html")
 let textIdentification = document.getElementById("text")
-
+let minutes = parseInt(travailTemps, 10)
+if(minutes < 10){
+  minutes = "0" + minutes
+}
+timerElement.innerText = `${minutes}:00`
 buttonreset.style.display = 'none'
 
 buttonstart.addEventListener("click",()=>{

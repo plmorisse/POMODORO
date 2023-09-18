@@ -30,7 +30,7 @@ div{
 	margin-left: auto;
 	margin-right: auto;
 	width: 300px;
-	margin-bottom: 5%;
+	margin-bottom: 2%;
 }
 
 html{
@@ -64,7 +64,6 @@ html{
 
 .statut{
 	border: 1px;
-	
 }
 
 #start{
@@ -81,5 +80,42 @@ html{
 
 #travail{
 	background-color: lightblue;
+}
 
+
+/*css menu deroulant*/
+.deroulant{
+	list-style: none;
+	font-family: 'Oswald', sans-serif;
+	font-size: x-large;
+	background-color: rgb(255, 115, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    display: inline-block;
+}
+
+.sous{
+	list-style: none;
+	display: none;
+	font-family: 'Oswald', sans-serif;
+	font-size: x-large;
+	background-color: white;
+	min-width: 200px;
+}
+
+
+.deroulant:hover {
+    background-color: rgb(255, 115, 0);
+    }
+
+.sous a {
+    color:black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+.deroulant:hover .sous {
+    display: block;
 }
