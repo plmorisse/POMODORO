@@ -15,3 +15,6 @@ For start you have default value in input, this value are the true value for POM
 input you're time thanks to the keyboard or directly on the website thanks to the incrementaly arrows.
 Then you have to click ont the start button for let begin the timer display on the middle of the app.
 If you want to stop the timer you can reset the timer for put other time for every periods.
+
+You can access to my app thanks to this link:
+https://plmorisse.github.io/POMODORO/
