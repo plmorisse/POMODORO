@@ -25,12 +25,12 @@ buttonreset.style.display = 'none'
 buttonstart.addEventListener("click",()=>{
   travailTemps= parseInt(document.getElementById("tpsTravail").value, 10)
   pauseTemps = parseInt(document.getElementById("tpsPause").value,10)
-  if(travailTemps <=0 || travailTemps =='e' || travailTemps == NULL){
-    alert("Le temps de travail doit être supérieur à 0 minutes !!")
+  if(travailTemps <=0 || travailTemps >=99 || isNaN(travailTemps)){
+    alert("Le temps de travail doit être compris de 1 minutes à 99 minutes au maximun!!")
     reload
   }
-  if(pauseTemps <=0 || pauseTemps =='e' || pauseTemps == NULL){
-    alert("Le temps de pause doit être supérieur à 0 minutes !!")
+  if(pauseTemps <=0 || pauseTemps >=99 || isNaN(pauseTemps)){
+    alert("Le temps de pause doit être compris de 1 minutes à 99 minutes au maximun!!")
     reload
   }
     timer(travailTemps, pauseTemps)
