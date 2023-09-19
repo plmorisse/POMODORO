@@ -1,8 +1,8 @@
 
 //changer val avant rendu
-const travailTemps = 0.25
-const pauseTemps = 0.1
-var  variation = new Boolean(true);
+let travailTemps = 0
+let pauseTemps = 0
+let  variation = new Boolean(true);
 
 let timerElement = document.getElementById("timer")
 let buttonstart = document.getElementById("start")
@@ -11,7 +11,11 @@ let statutTravail = document.getElementById("travail")
 let statutPause = document.getElementById("pause")
 let html = document.getElementById("html")
 let textIdentification = document.getElementById("text")
+let textTempsPause = document.getElementById("textPause")
+let textTempsTravail = document.getElementById("textTravail")
 let minutes = parseInt(travailTemps, 10)
+
+
 if(minutes < 10){
   minutes = "0" + minutes
 }
@@ -19,6 +23,16 @@ timerElement.innerText = `${minutes}:00`
 buttonreset.style.display = 'none'
 
 buttonstart.addEventListener("click",()=>{
+  travailTemps= parseInt(document.getElementById("tpsTravail").value, 10)
+  pauseTemps = parseInt(document.getElementById("tpsPause").value,10)
+  if(travailTemps <=0 || travailTemps =='e' || travailTemps == NULL){
+    alert("Le temps de travail doit être supérieur à 0 minutes !!")
+    reload
+  }
+  if(pauseTemps <=0 || pauseTemps =='e' || pauseTemps == NULL){
+    alert("Le temps de pause doit être supérieur à 0 minutes !!")
+    reload
+  }
     timer(travailTemps, pauseTemps)
     buttonstart.style.display = 'none'
     buttonreset.style.display = 'block'
@@ -57,6 +71,8 @@ function timer(x, y){
                 html.style.backgroundColor ='blue'
                 timerElement.style.color ='white'
                 textIdentification.style.color ='white'
+                textTempsPause.style.color = 'white'
+                textTempsTravail.style.color = 'white'
             }
             else if(variation == false){
               variation = true;
@@ -68,6 +84,8 @@ function timer(x, y){
                 html.style.backgroundColor ='red'
                 timerElement.style.color ='black'
                 textIdentification.style.color ='black'
+                textTempsPause.style.color = 'black'
+                textTempsTravail.style.color = 'black'
             }
             
         }

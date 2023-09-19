@@ -9,15 +9,15 @@ h1{
 	font-family: 'Oswald', sans-serif;
 }
 
-button{
-    background-color:rgb(255, 115, 0);
-    color: aliceblue;
+p{
+	color: black;
+	font-family: 'Oswald', sans-serif;
 }
 
 div{
   display: flex;
   justify-content: center;
-  padding : 5%;
+  padding: 2%;
 }
 
 .type{
@@ -50,6 +50,7 @@ html{
 	border-radius: 100%;
 	font-family: 'Oswald', sans-serif;
 	font-size: x-large;
+	padding : 5%;
 }
 
 #text{
@@ -66,22 +67,29 @@ html{
 	border: 1px;
 }
 
+
 #start{
-	padding: 15px;
 	font-family: 'Oswald', sans-serif;
 	font-size: x-large;
+	background-color:rgb(255, 115, 0);
+    color: aliceblue;
 }
 
 #reset{
-	padding: 15px;
 	font-family: 'Oswald', sans-serif;
 	font-size: x-large;
+	background-color:rgb(255, 115, 0);
+    color: aliceblue;
 }
 
 #travail{
 	background-color: lightblue;
 }
 
+
+#tpsTravail{
+	height: fit-content;
+}
 
 /*css menu deroulant*/
 .deroulant{
@@ -90,7 +98,6 @@ html{
 	font-size: x-large;
 	background-color: rgb(255, 115, 0);
     color: white;
-    border: none;
     cursor: pointer;
     padding: 20px;
     display: inline-block;
@@ -101,8 +108,6 @@ html{
 	display: none;
 	font-family: 'Oswald', sans-serif;
 	font-size: x-large;
-	background-color: white;
-	min-width: 200px;
 }
 
 
@@ -110,9 +115,10 @@ html{
     background-color: rgb(255, 115, 0);
     }
 
-.sous a {
+.sous button {
     color:black;
-    padding: 10px;
+    padding-bottom: 10px;
+	width: 100%;
     text-decoration: none;
     display: block;
 }
