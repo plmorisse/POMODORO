@@ -11,6 +11,12 @@ standard WCAG AA 2.0.
 
 The following project respect the specification give.
 
+Optional functionality: Imagine and implement a method to keep the parameters entered by
+the user in the browser
+
+The optional functionality isn-t implement because of lack of time. But like it's an optional functionnality I favored 
+the necessary functionality.
+
 For start you have default value in input, this value are the true value for POMODORO timer. But you can change them by 
 input you're time thanks to the keyboard or directly on the website thanks to the incrementaly arrows.
 Then you have to click ont the start button for let begin the timer display on the middle of the app.
